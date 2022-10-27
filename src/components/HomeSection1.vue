@@ -1,5 +1,5 @@
 <template>
-    <div class="section section1">
+    <div class="section section1" data-anchor="welcome" id="welcome">
         <div class="circle circle1"></div>
         <div class="circle circle2"></div>
         <div class="circle circle3"></div>
@@ -46,7 +46,7 @@ export default {
     left: 36%;
     /*animation-delay: 0s;*/
     opacity: 0.25;
-    animation: float 17s ease-in-out infinite;
+    animation: float 13s ease-in-out infinite;
 }
 
 .circle2 {
@@ -105,8 +105,6 @@ export default {
     grid-template-rows: 75vh;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-
-    color: #202020;
 }
 
 .div1 { 
@@ -139,7 +137,7 @@ img {
     height: auto;
     z-index: 1;
 
-    animation: float 30s ease-in-out infinite;
+    animation: float2 30s ease-in-out infinite;
 }
 .div2 { 
     grid-area: 1 / 2 / 2 / 3; 
@@ -163,6 +161,7 @@ img {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    /*animation: float2 30s ease-in-out infinite;*/
 }
 
 .custom-shape-divider-bottom-1666873237 svg {

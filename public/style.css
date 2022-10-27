@@ -1,6 +1,14 @@
 body {
     margin: auto;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
 /*
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
