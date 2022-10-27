@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="<%= BASE_URL %>light-icon.png" id="light-icon">
+    <link rel="icon" href="<%= BASE_URL %>dark-icon.png" id="dark-icon">
+    <link rel="stylesheet" href="<%= BASE_URL %>style.css"> 
+    <title>Lea Skagen's Website</title>
   </head>
   <body>
     <noscript>
@@ -13,5 +15,26 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+
+      const lightIcon = document.querySelector('link#light-icon');
+      const darkIcon = document.querySelector('link#dark-icon');
+      var isDark = window.matchMedia('(prefers-color-scheme: dark)');
+      
+      isDark.addListener(onUpdate);
+      onUpdate();
+
+      // Detects if the theme is dark or light
+      function onUpdate() {
+        if (isDark.matches) {
+          lightIcon.remove();
+          document.head.append(darkIcon);
+        } else {
+          document.head.append(lightIcon);
+          darkIcon.remove();
+        }
+      }
+      
+    </script>
   </body>
 </html>
