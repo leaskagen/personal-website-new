@@ -1,13 +1,18 @@
+
+
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HomeSection1/>
+    <HomeSection2/>
+    <HomeSection3/>
+    <FooterHome/>
   </div>
 </template>
 
 <style>
 body {
-  background: linear-gradient(297deg, #ff6cbe, #f97e99, #dd98fd);
+  background: linear-gradient(297deg, #ffa364, #f97ebe, #dd98fd);
+
     background-size: 600% 600%;
 
     -webkit-animation: backgroundAnimation 59s ease infinite;
@@ -36,12 +41,20 @@ body {
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+import HomeSection1 from '../components/HomeSection1.vue';
+import HomeSection2 from '../components/HomeSection2.vue';
+import HomeSection3 from '../components/HomeSection3.vue';
+import FooterHome from '../components/FooterHome.vue';
+
+
+  export default {
+    name: 'HomeView',
+    components: {
+      HomeSection1,
+      HomeSection2,
+      HomeSection3,
+      FooterHome
+    }
   }
-}
 </script>
