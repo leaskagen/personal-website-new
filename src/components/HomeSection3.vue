@@ -7,9 +7,35 @@
                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="hat"><img src="@/assets/icons/graduation.png"/></div>
+        <div class="pc"><img src="@/assets/icons/monitor.png"/></div>
         <h1>
-            Hei lmao
+            About Me
         </h1>
+        <div class="about-container">
+            <div class="about1">
+                <p>
+                    My very first experience with programming was in high school.<br/> I chose programming as an elective subject because I had always been fascinated by technology. We were taught Javascript during this course and I hated it. The teacher behaved inappropriately and had very mysogynistic attitude, which made his classes very uncomfortable, especially being only one of three girls in the class.
+I dreaded going to his classes and I barely passed, at this point I thought would never want to do programming again.
+                </p>
+                <p>
+                    I started at Kristiania University College in fall of 2020 to pursue a bachelor's degree in frontend and mobile development, and I am still excited about this field. Here I have worked a lot with HTML, CSS and Javascript, and frameworks for these technologies. I have also gotten to learn about new technologies such as React, Java, databases, Kotlin and Android development.<br/> This current semester I am learning about Vue.js, Ionic, iOS development and Swift, Azure and more. I will graduate in spring 2023 and I am looking forward to finally start my career.
+                </p>
+            </div>
+            <div class="about2">
+                <p>After graduating high school in 2019 I started at the Norwegian University of Science and Technology (NTNU), where I started on a bachelor's degree in interactive design. Here I learned about basic design principles, universal design and WCAG, prototyping with Figma and Adobe XD.<br/><br/>
+
+During the first semester I also had an introductary coding class where I was taught HTML, CSS and some Javascript, however this time was different. The teacher here made this class so fun and exciting. His classes were the highlight of my week. I got so interested in coding that when I found out that I could become a frontend developer, I dropped out after the first year to pursue an education in tech instead.
+
+</p>
+
+            </div>
+
+        </div>
         <div class="custom-shape-divider-bottom-1666895900">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -63,7 +89,143 @@
 }
 
 h1 {
-    padding: 10em;
+        margin: 0;
+        text-align: center;
+        padding-top: 2.5em;
+        font-size: 2.5em;
+    }
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin-bottom: 5em;
+}
+
+.about-container p {
+    
+    z-index: 1;
+    font-size: 1.2em;
+    width: 75%;
+    text-align: center;
+}
+
+.about1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.about2 {
+    grid-area: 1 / 2 / 2 / 3; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about1 p:last-of-type {
+    margin-top: 22.5em;
+}
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-20px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float2 {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(20px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
+
+.circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    /*animation: circle 10s ease-in-out infinite;*/
+}
+
+.circle1 {
+    top: 265%;
+    left: 36%;
+    /*animation-delay: 0s;*/
+    opacity: 0.25;
+    animation: float 13s ease-in-out infinite;
+}
+
+.circle2 {
+    top: 208%;
+    left: 13%;
+    width: 175px;
+    height: 175px;
+    /*animation-delay: 0s;*/
+    opacity: 0.5;
+    animation: float2 27s ease-in-out infinite;
+    
+}
+
+.circle3 {
+    top: 190%;
+    right: 10%;
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+    /*animation-delay: 4s;*/
+    animation: float 15s ease-in-out infinite;
+}
+
+.circle4 {
+    top: 241%;
+    right: 17%;
+    opacity: 0.25;
+    width: 200px;
+    height: 200px;
+    /*animation-delay: 4s;*/
+    animation: float2 20s ease-in-out infinite;
+}
+
+.hat img {
+    position: absolute;
+    top: 196%;
+    right: 27%;
+    width: 150px;
+    height: 150px;
+    animation: float2 20s ease-in-out infinite;
+}
+
+.pc img {
+    position: absolute;
+    top: 233.5%;
+    left: 27%;
+    width: 150px;
+    height: 150px;
+    animation: float 26s ease-in-out infinite;
 }
 </style>
 
@@ -71,6 +233,4 @@ h1 {
 export default {
     name: 'HomeSection3'
 }
-
-
 </script>

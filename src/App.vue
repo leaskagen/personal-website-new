@@ -2,6 +2,7 @@
   <nav>
     <a href="#welcome" data-menuanchor="welcome">Lea Skagen</a>
     <a href="#projects" data-menuanchor="projects">Projects</a>
+    <a href="#about" data-menuanchor="about">About me</a>
     <a href="#contact" data-menuanchor="contact">Contact</a>
   </nav>
   <router-view/>
@@ -21,20 +22,32 @@
 }
 
 nav {
-  padding: 30px;
-  height: 100vh;
+  padding: 0.5em 1.5em;
+  height: 2.75em;
+  /*height: 100vh;*/
   position: fixed;
+  /*right: 0;*/
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  gap: 1.5em;
   z-index: 100;
+  /*text-align: right;*/
+  backdrop-filter: blur(5px);
+  width: 100%;
+  text-align: left;
 
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
-  width: 100%;
+  font-size: 1.75em;
+
+  color: #20202080;
+  /*width: 100%;*/
+}
+
+nav a:hover {
+  color: #202020;
 }
 
 nav a.router-link-exact-active {
