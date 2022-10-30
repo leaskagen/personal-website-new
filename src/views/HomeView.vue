@@ -1,10 +1,10 @@
 <template>
-  <div class="home">
+  <main>
     <HomeSection1/>
     <HomeSection2/>
     <HomeSection3/>
     <FooterHome/>
-  </div>
+  </main>
 </template>
 
 <style>
