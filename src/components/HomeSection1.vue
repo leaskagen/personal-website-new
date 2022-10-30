@@ -5,12 +5,12 @@
         <div class="circle circle3"></div>
         <div class="container">
             <div class="div1">
-                <h1>Lea Skagen</h1>
-                <h2>Frontend & Mobile Developer Student</h2>
-                <p>My name is Lea, and I am currently 22 years old and live in Oslo, Norway. <br/>I am studying frontend and mobile development at Kristiania University College,<br/> and will graduate with a bachelor's degree in spring 2023.</p>
+                <h1 data-aos="zoom-in" data-aos-once="false" data-aos-duration="1500">Lea Skagen</h1>
+                <h2 data-aos="zoom-in" data-aos-once="false" data-aos-duration="1500">Frontend & Mobile Developer Student</h2>
+                <p data-aos="zoom-in" data-aos-once="false" data-aos-duration="1500">My name is Lea, and I am currently 22 years old and live in Oslo, Norway. <br/>I am studying frontend and mobile development at Kristiania University College,<br/> and will graduate with a bachelor's degree in spring 2023.</p>
             </div>
             <div class="div2">
-                <img src="@/assets/meg.jpg"/>
+                <img src="@/assets/meg.jpg" data-aos="zoom-in" data-aos-once="false" data-aos-duration="2000"/>
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1666873237">

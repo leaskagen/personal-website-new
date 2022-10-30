@@ -5,8 +5,28 @@
     <a href="#about" data-menuanchor="about">About me</a>
     <a href="#contact" data-menuanchor="contact">Contact</a>
   </nav>
-  <router-view/>
+    <router-view/>
 </template>
+
+<script setup>
+
+import { onMounted } from "vue";
+import AOS from "aos";
+
+onMounted(() => {
+    AOS.init();
+})
+
+
+/*
+export default {
+  name: 'App',
+  function mounted() {
+  AOS.init()
+}
+}
+*/
+</script>
 
 <style>
 

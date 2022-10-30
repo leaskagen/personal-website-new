@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="about">
         <div class="custom-shape-divider-top-1666889278">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -13,21 +13,21 @@
         <div class="circle circle4"></div>
         <div class="hat"><img src="@/assets/icons/graduation.png"/></div>
         <div class="pc"><img src="@/assets/icons/monitor.png"/></div>
-        <h1>
+        <h1 data-aos="zoom-in" data-aos-once="false">
             About Me
         </h1>
         <div class="about-container">
             <div class="about1">
-                <p>
+                <p data-aos="zoom-in" data-aos-once="false">
                     My very first experience with programming was in high school.<br/> I chose programming as an elective subject because I had always been fascinated by technology. We were taught Javascript during this course and I hated it. The teacher behaved inappropriately and had very mysogynistic attitude, which made his classes very uncomfortable, especially being only one of three girls in the class.
 I dreaded going to his classes and I barely passed, at this point I thought would never want to do programming again.
                 </p>
-                <p>
-                    I started at Kristiania University College in fall of 2020 to pursue a bachelor's degree in frontend and mobile development, and I am still excited about this field. Here I have worked a lot with HTML, CSS and Javascript, and frameworks for these technologies. I have also gotten to learn about new technologies such as React, Java, databases, Kotlin and Android development.<br/> This current semester I am learning about Vue.js, Ionic, iOS development and Swift, Azure and more. I will graduate in spring 2023 and I am looking forward to finally start my career.
+                <p data-aos="zoom-in" data-aos-once="false">
+                    I started at Kristiania University College in fall of 2020 to pursue a bachelor's degree in frontend and mobile development, and I am still excited about this field. Here I have worked a lot with HTML, CSS and Javascript, and frameworks for these technologies. I have also gotten to learn about new technologies such as React, Java, databases, Kotlin and Android development.<br/> This current semester I am learning about Vue.js, Ionic, iOS development and Swift, Google Cloud and more. I will graduate in spring 2023 and I am looking forward to finally start my career.
                 </p>
             </div>
             <div class="about2">
-                <p>After graduating high school in 2019 I started at the Norwegian University of Science and Technology (NTNU), where I started on a bachelor's degree in interactive design. Here I learned about basic design principles, universal design and WCAG, prototyping with Figma and Adobe XD.<br/><br/>
+                <p data-aos="zoom-in" data-aos-once="false">After graduating high school in 2019 I started at the Norwegian University of Science and Technology (NTNU), where I started on a bachelor's degree in interactive design. Here I learned about basic design principles, universal design and WCAG, prototyping with Figma and Adobe XD.<br/><br/>
 
 During the first semester I also had an introductary coding class where I was taught HTML, CSS and some Javascript, however this time was different. The teacher here made this class so fun and exciting. His classes were the highlight of my week. I got so interested in coding that when I found out that I could become a frontend developer, I dropped out after the first year to pursue an education in tech instead.
 
@@ -172,15 +172,15 @@ h1 {
 }
 
 .circle1 {
-    top: 265%;
-    left: 36%;
+    top: 290%;
+    left: 39%;
     /*animation-delay: 0s;*/
     opacity: 0.25;
     animation: float 13s ease-in-out infinite;
 }
 
 .circle2 {
-    top: 208%;
+    top: 228%;
     left: 13%;
     width: 175px;
     height: 175px;
@@ -191,7 +191,7 @@ h1 {
 }
 
 .circle3 {
-    top: 190%;
+    top: 220%;
     right: 10%;
     opacity: 0.5;
     width: 100px;
@@ -201,7 +201,7 @@ h1 {
 }
 
 .circle4 {
-    top: 241%;
+    top: 302%;
     right: 17%;
     opacity: 0.25;
     width: 200px;
@@ -212,7 +212,7 @@ h1 {
 
 .hat img {
     position: absolute;
-    top: 196%;
+    top: 233%;
     right: 27%;
     width: 150px;
     height: 150px;
@@ -221,7 +221,7 @@ h1 {
 
 .pc img {
     position: absolute;
-    top: 233.5%;
+    top: 269.5%;
     left: 27%;
     width: 150px;
     height: 150px;

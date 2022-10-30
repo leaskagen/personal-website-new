@@ -1,30 +1,30 @@
 <template>
     <footer id="contact">
-        <h1>Contact me</h1>
+        <h1 data-aos="zoom-in" data-aos-once="false">Contact me</h1>
         
             <ul>
-                <li>
+                <li data-aos="zoom-in" data-aos-once="false">
                     <a href="https://www.linkedin.com/in/lea-sofie-skagen-a29451169">
                         <img src="@/assets/icons/linkedin.png" alt="link to my linkedin"> Lea Sofie Skagen
                     </a>
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-once="false">
                     <a href="https://github.com/leaskagen">
                         <img src="@/assets/icons/github.png" alt="link to my github"> leaskagen
                     </a>
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-once="false">
                     <a href="mailto:lea.skagen@gmail.com">
                         <img src="@/assets/icons/mail.png" alt="send me email"> lea.skagen@gmail.com
                     </a>
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-once="false">
                     <a href="https://leaskagen.github.io/resume.html" target="_blank" rel="noopener noreferrer">
                         <img src="@/assets/icons/resume.png" alt="send me email"> See my resume
                     </a>
                 </li>
             </ul>
-            <p class="bottom-text">This website was made with Vue.js<br/>Shapes are made with <a href="https://www.shapedivider.app" target="_blank" rel="noopener noreferrer">shapedivider.app</a> and icons are from <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">flaticon.com</a> and <a href="https://freeicons.io/" target="_blank" rel="noopener noreferrer">freeicons.io</a></p>
+            <p class="bottom-text" data-aos="zoom-in" data-aos-once="false">This website was made with Vue.js<br/>Shapes are made with <a href="https://www.shapedivider.app" target="_blank" rel="noopener noreferrer">shapedivider.app</a> and icons are from <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">flaticon.com</a> and <a href="https://freeicons.io/" target="_blank" rel="noopener noreferrer">freeicons.io</a></p>
         
     </footer>
 </template>
