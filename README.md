@@ -1,5 +1,7 @@
 # personal-website
 
+https://leaskagen.dev/
+
 Hello and welcome to my new website built with Vue.js. This project is still a work in progress so please don't judge my code too much yet :)
 
 ### Project Links
