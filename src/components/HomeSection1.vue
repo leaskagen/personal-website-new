@@ -133,7 +133,7 @@ p {
 
 img {
     border-radius: 50%;
-    width: 350px;
+    width: 325px;
     height: auto;
     z-index: 1;
 

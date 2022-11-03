@@ -9,6 +9,7 @@
             </div>
             <div class="projects-right">
                 <h2  data-aos="zoom-in" data-aos-once="false">These are projects I have worked on before</h2>
+                <p data-aos="zoom-in" data-aos-once="false" class="subtitle-projects">This part is still a work in progress, so the links to the different projects are not working yet. If you are interested in these projects then see the links in my <a href="https://github.com/leaskagen/personal-website-new/" data-aos="zoom-in" data-aos-once="false" class="subtitle-projects">repository</a></p>
                 <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="60vh" autoplay>
                 <vueper-slide
                     v-for="(slide, i) in slides"
@@ -35,6 +36,14 @@
         </div>
 </template>
 <style scoped>
+
+.subtitle-projects {
+    font-size: 12px;
+}
+
+.subtitle-projects a {
+    text-decoration: underline;
+}
 
 .project-slides {
 
@@ -87,39 +96,9 @@ h3 {
     margin-bottom: 0;
 }
 
-/*<div class="buttons">
-                <button  @click="next">next</button>
-                <button  @click="prev">prev</button>
-            </div>
-            <div class="projectslides">
-                <div class="project-slide">
-                    <img src="@/assets/screenshots/screenshot-1.png" alt="project screenshot">
-                    <div class="project-content">
-                        <h3>Gyldne Pizza Portalen</h3>
-                        <p>I made this project with a few other students for an exam we had in the second semester (spring 2021). This website was made for the employees in charge of a fictional resturant chain. Here you can see statistics for different restaurants and menu items, add or remove employees, edit menu items, and a few other things you would want to do as an employee or manager.</p>
-                        <p><strong>Technologies used:</strong> HTML, CSS, Bulma, Javascript, Google Charts</p>
-                    </div>
-                </div>
-                <div class="project-slide">
-                    <img src="@/assets/screenshots/screenshot-1.png" alt="project screenshot">
-                    <div class="project-content">
-                        <h3>Gyldne Pizza Portalen</h3>
-                        <p>I made this project with a few other students for an exam we had in the second semester (spring 2021). This website was made for the employees in charge of a fictional resturant chain. Here you can see statistics for different restaurants and menu items, add or remove employees, edit menu items, and a few other things you would want to do as an employee or manager.</p>
-                        <p><strong>Technologies used:</strong> HTML, CSS, Bulma, Javascript, Google Charts</p>
-                    </div>
-                </div>
-                <div class="project-slide">
-                    <img src="@/assets/screenshots/screenshot-1.png" alt="project screenshot">
-                    <div class="project-content">
-                        <h3>Gyldne Pizza Portalen</h3>
-                        <p>I made this project with a few other students for an exam we had in the second semester (spring 2021). This website was made for the employees in charge of a fictional resturant chain. Here you can see statistics for different restaurants and menu items, add or remove employees, edit menu items, and a few other things you would want to do as an employee or manager.</p>
-                        <p><strong>Technologies used:</strong> HTML, CSS, Bulma, Javascript, Google Charts</p>
-                    </div>
-                </div>*/
     .section2 {
         background-color: white;
         padding-bottom: 5em;
-        /*height: 120vh;*/
 
     }
 
@@ -190,10 +169,7 @@ h3 {
 
     .splide__slide {
         width: 100vw;
-        /*
-        height: 70vhpx;
-        width: 90vw;
-        */
+
     }
 
     .splide__slide img {
@@ -201,98 +177,14 @@ h3 {
         width: 90vw;
         object-fit: cover;
     }
-    /*
-<div class="project-aside">
-                <p>Here are some of the projects I have worked on in the past.</p>
-
-                <h2>These are the technologies I have worked with</h2>
-            </div>
-            <div class="projects-container">
-                <splide :options="options">
-                    <splide-slide class="splide__slide">
-                    <img src="@/assets/screenshots/screenshot-1.png">
-                    </splide-slide>
-                    <splide-slide class="splide__slide">
-                    <img src="@/assets/meg.jpg">
-                    </splide-slide>
-                    <splide-slide class="splide__slide">
-                    <img src="@/assets/meg.jpg">
-                    </splide-slide>
-                </splide>
-            </div>
-    */
-    /*
-    .projects-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-
-    .vueperslides__arrow {color: yellow}
-*/
-    /*
-    .project-aside {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-    img {
-        height: 500px;
-        width: 800px;
-        object-fit: cover;
-    }
-    .splide__slide {
-        height: 500px;
-        width: 800px;
-    }
-
-    .projects-container {
-        grid-area: 1 / 2 / 2 / 3;
-        width: 80%;
-    }
-*/
-    /*
-    .projects-container {
-        display: flex;
-        overflow-x: scroll;
-        padding: 24px;
-        width: 300px;
-        scroll-snap-type: x mandatory;
-        scroll-padding: 24px;
-        border-radius: 8px;
-        gap: 12px;
-        grid-area: 1 / 2 / 2 / 3;
-    }
-
-    .projects-container .project {
-        flex: 0 0 100%;
-        padding: 24px;
-        border-radius: 8px;
-        scroll-snap-align: start;
-    }
-
-    .projects-container .project img {
-        width: 250px;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-*/
+   
 </style>
 
 <script>
-// In your Vue.js component.
-/*
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-*/
-
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
 import TechnologiesDiv from './Technologies.vue';
-
-//import Flicking from "@egjs/vue3-flicking";
 
 export default {
 
@@ -315,6 +207,12 @@ slides: [
       image: require('@/assets/screenshots/screenshot-2.png'),
       description: 'This is the most complex project I have been a part of yet, it was made for my most recent exam and I made it with my group. The project was made for Meliora Impact which is a Norwegian non profit. They wanted a platform where small-medium sized businesses can subscribe to charities, meaning that they donate to them regularly.',
       techs: 'React, CSS, Google OpenID, MongoDB, Express.js, Heroku'
+    },
+    {
+      title: 'Old Personal Website',
+      image: require('@/assets/screenshots/personal.png'),
+      description: 'This is my first personal website I built trying out Fullpage.js and Sass. It was a small and fun side project I did in my spare time earlier this year. It is also translated to both English and Norwegian.',
+      techs: 'HTML, Sass, Javascript, Fullpage.js'
     }
   ]
 }),
@@ -322,75 +220,6 @@ slides: [
     VueperSlides, 
     VueperSlide,
     TechnologiesDiv
-    },
-    //Splide,
-    //SplideSlide
-    }
-
-
-
-
-  
-
-    /*data () {
-    return {
-      // ...
-      innerStyles: {},
-      step: ''
-    }
-  },
-
-  mounted () {
-    this.setStep()
-  },
-
-  methods: {
-    setStep () {
-      const innerWidth = this.$refs.projectslides.scrollWidth // ❶
-      const totalCards = 3
-      this.step = `${innerWidth / totalCards}px` // ❷
-    },
-
-    next () {
-      this.moveLeft() // ❸
-    },
-
-    moveLeft () {
-      this.innerStyles = {
-        transform: `translateX(-${this.step})`
-      }
-    }
-  }
-  ,components: {
-    Flicking: Flicking
-  }
-}*/
-/*
-    data: () => ({
-slides: [
-    { content: '<div><img src=</div>'}
-    //{ image: require('@/assets/screenshots/screenshot-1.png'), title: 'Gyldne Pizza Portalen' },
-    //{ title: 'Time', content: 'Time in 5 hours: ' }
-  ]
-}),
-*/
-    /*
-    data() {
-      return {
-        options: {
-            rewind  : true,
-            gap     : '1rem',
-            autoplay: true,
-            height  : '45rem',
-
-
-        },
-      };
-    },*/
-    //name:'HomeSection2',
-    
-  
-
-
+},}
 
 </script>

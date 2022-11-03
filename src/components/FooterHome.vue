@@ -1,31 +1,18 @@
 <template>
     <footer id="contact">
         <h1 data-aos="zoom-in" data-aos-once="false">Contact me</h1>
-        
-            <ul>
-                <li data-aos="zoom-in" data-aos-once="false">
-                    <a href="https://www.linkedin.com/in/lea-sofie-skagen-a29451169">
-                        <img src="@/assets/icons/linkedin.png" alt="link to my linkedin"> Lea Sofie Skagen
-                    </a>
-                </li>
-                <li data-aos="zoom-in" data-aos-once="false">
-                    <a href="https://github.com/leaskagen">
-                        <img src="@/assets/icons/github.png" alt="link to my github"> leaskagen
-                    </a>
-                </li>
-                <li data-aos="zoom-in" data-aos-once="false">
-                    <a href="mailto:lea.skagen@gmail.com">
-                        <img src="@/assets/icons/mail.png" alt="send me email"> lea.skagen@gmail.com
-                    </a>
-                </li>
-                <li data-aos="zoom-in" data-aos-once="false">
-                    <a href="https://leaskagen.github.io/resume.html" target="_blank" rel="noopener noreferrer">
-                        <img src="@/assets/icons/resume.png" alt="send me email"> See my resume
-                    </a>
-                </li>
-            </ul>
-            <p class="bottom-text" data-aos="zoom-in" data-aos-once="false">This website was made with Vue.js<br/>Shapes are made with <a href="https://www.shapedivider.app" target="_blank" rel="noopener noreferrer">shapedivider.app</a> and icons are from <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">flaticon.com</a> and <a href="https://freeicons.io/" target="_blank" rel="noopener noreferrer">freeicons.io</a></p>
-        
+        <ul v-for="(link, i) in links" :key="i"
+                    :link="link.link"
+                    :image="link.image"
+                    :text="link.text"
+                    :alt="link.alt">
+            <li data-aos="zoom-in" data-aos-once="false">
+                <a :href="link.link">
+                    <img :src="link.image" :alt="link.alt"> {{link.text}}
+                </a>
+            </li>
+        </ul>
+        <p class="bottom-text" data-aos="zoom-in" data-aos-once="false">This website was made with Vue.js, link to repository for this project here<br/>Shapes are made with <a href="https://www.shapedivider.app" target="_blank" rel="noopener noreferrer">shapedivider.app</a> and icons are from <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">flaticon.com</a> and <a href="https://freeicons.io/" target="_blank" rel="noopener noreferrer">freeicons.io</a></p>
     </footer>
 </template>
 
@@ -49,7 +36,7 @@ ul {
         width: 350px;
 }
     li {
-        margin: 1vh 0;
+        margin:  0;
         font-size: 14px;
         text-align: left;
     }
@@ -86,6 +73,34 @@ ul {
 
 <script>
 export default {
-    name: 'FooterHome'
+    name: 'FooterHome',
+    data: () => ({
+        links: [
+            {
+            link: 'https://www.linkedin.com/in/lea-sofie-skagen-a29451169',
+            image: require('@/assets/icons/linkedin.png'),
+            text: 'Lea Sofie Skagen',
+            alt: 'link to my linkedin'
+            },
+            {
+            link: 'https://github.com/leaskagen',
+            image: require('@/assets/icons/github.png'),
+            text: 'leaskagen',
+            alt: 'link to my github'
+            },
+            {
+            link: 'mailto:lea.skagen@gmail.com',
+            image: require('@/assets/icons/mail.png'),
+            text: 'lea.skagen@gmail.com',
+            alt: 'send me an email'
+            },
+            {
+            link: 'https://leaskagen.github.io/resume.html',
+            image: require('@/assets/icons/resume.png'),
+            text: 'See my resume',
+            alt: 'See my resume'
+            }  
+        ]
+    }),
 }
 </script>
