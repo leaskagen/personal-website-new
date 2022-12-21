@@ -27,6 +27,7 @@ onMounted(() => {
   color: #202020;
 }
 
+/* Navigation bar */
 nav {
   padding: 0.5em 1.5em;
   height: 2.75em;

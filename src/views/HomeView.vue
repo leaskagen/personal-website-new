@@ -1,13 +1,14 @@
 <template>
   <main>
     <HeroSection/>
-    <HomeSection2/>
+    <ProjectSection/>
     <AboutSection/>
-    <FooterHome/>
+    <FooterSection/>
   </main>
 </template>
 
 <style>
+/* Background animation */
 body {
   background: linear-gradient(297deg, #ffa364, #f97ebe, #dd98fd);
   background-size: 600% 600%;
@@ -37,17 +38,17 @@ body {
 
 <script>
 import HeroSection from '../components/HeroSection.vue';
-import HomeSection2 from '../components/HomeSection2.vue';
+import ProjectSection from '../components/ProjectSection.vue';
 import AboutSection from '../components/AboutSection.vue';
-import FooterHome from '../components/FooterHome.vue';
+import FooterSection from '../components/FooterSection.vue';
 
   export default {
     name: 'HomeView',
     components: {
       HeroSection,
-      HomeSection2,
+      ProjectSection,
       AboutSection,
-      FooterHome
+      FooterSection
     }
   }
 </script>

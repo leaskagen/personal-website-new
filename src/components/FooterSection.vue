@@ -79,7 +79,7 @@ a:hover {
 
 <script>
 export default {
-    name: 'FooterHome',
+    name: 'FooterSection',
     data: () => ({
         links: [
             {

@@ -45,53 +45,15 @@
 
 <style scoped>
 
-.custom-shape-divider-top-1666889278 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1666889278 svg {
-    position: relative;
-    display: block;
-    width: calc(121% + 1.3px);
-    height: 171px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1666889278 .shape-fill {
-    fill: #FFFFFF;
-}
-
-.custom-shape-divider-bottom-1666895900 {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1666895900 svg {
-    position: relative;
-    display: block;
-    width: calc(300% + 1.3px);
-    height: 154px;
-}
-
-.custom-shape-divider-bottom-1666895900 .shape-fill {
-    fill: #FFFFFF80;
-}
-
 h1 {
     margin: 0;
     text-align: center;
     padding-top: 2.5em;
     font-size: 2.5em;
+}
+
+#about {
+    position: relative;
 }
 
 .about-container {
@@ -100,7 +62,6 @@ h1 {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-
     margin-bottom: 5em;
 }
 
@@ -141,57 +102,53 @@ h1 {
 }
 
 .circle1 {
-    top: 290%;
-    left: 39%;
-    /*animation-delay: 0s;*/
+    top: calc(75% - 75px);
+    left: calc(40% - 25px);
     opacity: 0.25;
     animation: float 13s ease-in-out infinite;
 }
 
 .circle2 {
-    top: 228%;
+    top: calc(25% + 45px);
     left: 13%;
     width: 175px;
     height: 175px;
-    /*animation-delay: 0s;*/
     opacity: 0.5;
     animation: float2 27s ease-in-out infinite;
     
 }
 
 .circle3 {
-    top: 220%;
+    top: calc(15%);
     right: 10%;
     opacity: 0.5;
     width: 100px;
     height: 100px;
-    /*animation-delay: 4s;*/
     animation: float 15s ease-in-out infinite;
 }
 
 .circle4 {
-    top: 302%;
+    top: calc(78%);
     right: 17%;
     opacity: 0.25;
     width: 200px;
     height: 200px;
-    /*animation-delay: 4s;*/
     animation: float2 20s ease-in-out infinite;
 }
 
 .hat img {
-    position: relative;
-    top: 233px;
-    right: 27px;
+    position: absolute;
+    top: calc(30% - 50px);
+    right: calc(50% - 450px);
     width: 150px;
     height: 150px;
     animation: float2 20s ease-in-out infinite;
 }
 
 .pc img {
-    position: relative;
-    top: 720px;
-    left: -330px;
+    position: absolute;
+    top: calc(50%);
+    left: calc(50% - 450px);
     width: 150px;
     height: 150px;
     animation: float 26s ease-in-out infinite;
@@ -226,6 +183,49 @@ h1 {
 
 		transform: translatey(0px);
 	}
+}
+
+/* Custom shape */
+.custom-shape-divider-top-1666889278 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1666889278 svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 171px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1666889278 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1666895900 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666895900 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 154px;
+}
+
+.custom-shape-divider-bottom-1666895900 .shape-fill {
+    fill: #FFFFFF80;
 }
 </style>
 
