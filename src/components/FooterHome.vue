@@ -1,3 +1,4 @@
+// This is the footer component for the page
 <template>
     <footer id="contact">
         <h1 data-aos="zoom-in" data-aos-once="false">Contact me</h1>
@@ -12,7 +13,7 @@
                 </a>
             </li>
         </ul>
-        <p class="bottom-text" data-aos="zoom-in" data-aos-once="false">This website was made with Vue.js, link to repository for this project here<br/>Shapes are made with <a href="https://www.shapedivider.app" target="_blank" rel="noopener noreferrer">shapedivider.app</a> and icons are from <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">flaticon.com</a> and <a href="https://freeicons.io/" target="_blank" rel="noopener noreferrer">freeicons.io</a></p>
+        <p class="bottom-text" data-aos="zoom-in" data-aos-once="false">This website was made with Vue.js, link to repository for this project <a href="https://github.com/leaskagen/personal-website-new" target="_blank" rel="noopener noreferrer">here</a><br/>Shapes are made with <a href="https://www.shapedivider.app" target="_blank" rel="noopener noreferrer">shapedivider.app</a> and icons are from <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">flaticon.com</a> and <a href="https://freeicons.io/" target="_blank" rel="noopener noreferrer">freeicons.io</a></p>
     </footer>
 </template>
 
@@ -35,40 +36,45 @@ ul {
         list-style-type: none;
         width: 350px;
 }
-    li {
-        margin:  0;
-        font-size: 14px;
-        text-align: left;
-    }
-    p {
-        font-size: 14px;
-    }
 
-    img {
-            height: 30px;
-            position: relative;
-            top: 5px;
-            margin-right: 10px;
-            fill: #202020;
-        }
-        a {
-            color: #202020;
-            text-decoration: none;
-            font-size: 24px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+li {
+    margin:  0;
+    font-size: 14px;
+    text-align: left;
+}
 
-        .bottom-text {
-            margin-top: 5em;
-            text-align: center;
-            font-size: 14px;
-        }
-        .bottom-text a {
-            font-size: 14px;
-            text-decoration: underline;
-        }
+p {
+    font-size: 14px;
+}
+
+img {
+    height: 30px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    fill: #202020;
+}
+
+a {
+    color: #202020;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bottom-text {
+    margin-top: 5em;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom-text a {
+    font-size: 14px;
+    text-decoration: underline;
+}
 </style>
 
 <script>

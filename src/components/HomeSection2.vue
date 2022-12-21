@@ -9,7 +9,6 @@
             </div>
             <div class="projects-right">
                 <h2  data-aos="zoom-in" data-aos-once="false">These are projects I have worked on before</h2>
-                <p data-aos="zoom-in" data-aos-once="false" class="subtitle-projects">This part is still a work in progress, so the links to the different projects are not working yet. If you are interested in these projects then see the links in my <a href="https://github.com/leaskagen/personal-website-new/" data-aos="zoom-in" data-aos-once="false" class="subtitle-projects">repository</a></p>
                 <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="60vh" autoplay>
                 <vueper-slide
                     v-for="(slide, i) in slides"
@@ -18,13 +17,18 @@
                     :title="slide.title"
                     :description="slide.description"
                     :techs="slide.techs"
+                    :website="slide.website"
+                    :github="slide.github"
                     :style="'background: white;'">
                     <template #content>
                         <div class="slide-content">
                             <img :src="slide.image" alt="slide image" class="slide-image"  data-aos="zoom-in" data-aos-once="false">
-                            <h3  data-aos="zoom-in" data-aos-once="false">{{ slide.title }}</h3>
-                            <p  data-aos="zoom-in" data-aos-once="false">{{ slide.description }}</p>
-                            <p  data-aos="zoom-in" data-aos-once="false"><strong>Technologies used: </strong>{{ slide.techs }}</p>
+                            <h3 data-aos="zoom-in" data-aos-once="false">{{ slide.title }}
+                                <a v-if="slide.website != null" :href="slide.website" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-once="false"><img src="@/assets/icons/external-link.png" class="link-icon"/></a>
+                                <a v-if="slide.github != null" :href="slide.github" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-once="false"><img src="@/assets/icons/github.png" class="link-icon"/></a>
+                            </h3>
+                            <p data-aos="zoom-in" data-aos-once="false">{{ slide.description }}</p>
+                            <p data-aos="zoom-in" data-aos-once="false"><strong>Technologies used: </strong>{{ slide.techs }}</p>
                         </div>
                     </template>
                 </vueper-slide>
@@ -36,6 +40,12 @@
         </div>
 </template>
 <style scoped>
+
+.link-icon {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+}
 
 .subtitle-projects {
     font-size: 12px;
@@ -194,25 +204,41 @@ slides: [
       title: 'Gyldne Pizza Portalen',
       image: require('@/assets/screenshots/screenshot-1.png'),
       description: 'I made this project with a few other students for an exam we had in the second semester (spring 2021). This website was made for the employees in charge of a fictional resturant chain. Here you can see statistics for different restaurants and menu items, add or remove employees, edit menu items, and a few other things you would want to do as an employee or manager.',
-      techs: 'HTML, CSS, Bulma, Javascript, Google Charts'
+      techs: 'HTML, CSS, Bulma, Javascript, Google Charts',
+      website: 'https://runejac.github.io/WebprosjektSolution/index.html',
+      github: 'https://github.com/runejac/webprosjekt'
     },
     {
       title: 'Pizzeria Bella',
       image: require('@/assets/screenshots/pizzeria_bella.png'),
       description: 'This is another group project I did during the third semester (fall 2021). The project was made for a fictional pizza resturant, where customers can order pizza by adding or removing items from their shopping cart. This was also the very first project we made with React, and it is optimalized for desktop, tablet and phone screen sizes.',
-      techs: 'HTML, CSS, React'
+      techs: 'HTML, CSS, React',
+      website: null,
+      github: 'https://github.com/leaskagen/eksamen-grensesnittdesign'
     },
     {
       title: 'Meliora Impact',
       image: require('@/assets/screenshots/screenshot-2.png'),
-      description: 'This is the most complex project I have been a part of yet, it was made for my most recent exam and I made it with my group. The project was made for Meliora Impact which is a Norwegian non profit. They wanted a platform where small-medium sized businesses can subscribe to charities, meaning that they donate to them regularly.',
-      techs: 'React, CSS, Google OpenID, MongoDB, Express.js, Heroku'
+      description: 'This is one of the most complex projects that I have been a part of, it was made for my most recent exam and I made it with my group. The project was made for Meliora Impact which is a Norwegian non profit. They wanted a platform where small-medium sized businesses can subscribe to charities, meaning that they donate to them regularly.',
+      techs: 'React, CSS, Google OpenID, MongoDB, Express.js, Heroku',
+      website: null,
+      github: null
     },
     {
       title: 'Old Personal Website',
       image: require('@/assets/screenshots/personal.png'),
       description: 'This is my first personal website I built trying out Fullpage.js and Sass. It was a small and fun side project I did in my spare time earlier this year. It is also translated to both English and Norwegian.',
-      techs: 'HTML, Sass, Javascript, Fullpage.js'
+      techs: 'HTML, Sass, Javascript, Fullpage.js',
+      website: 'https://leaskagen.github.io/',
+      github: 'https://github.com/leaskagen/leaskagen.github.io'
+    },
+    {
+      title: 'Retro Trader App',
+      image: require('@/assets/screenshots/retroapp.svg'),
+      description: 'This is a crossplattform app I made with Ionic framework with Vue.js and Typescript, also with Directus as database and backend. It was made for an exam in the fifth semester (fall 2022) and is a marketplace for retro games. You can create an account, publish games for sale, buy games, chat with other users, and more.',
+      techs: 'Ionic, Vue.js, Typescript, Directus, GraphQL, iOS/Xcode',
+      website: null,
+      github: 'https://github.com/leaskagen/Eksamen-Kryssplattform'
     }
   ]
 }),
