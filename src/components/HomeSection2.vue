@@ -10,34 +10,32 @@
             <div class="projects-right">
                 <h2  data-aos="zoom-in" data-aos-once="false">These are projects I have worked on before</h2>
                 <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="60vh" autoplay>
-                <vueper-slide
-                    v-for="(slide, i) in slides"
-                    :key="i"
-                    :image="slide.image"
-                    :title="slide.title"
-                    :description="slide.description"
-                    :techs="slide.techs"
-                    :website="slide.website"
-                    :github="slide.github"
-                    :style="'background: white;'">
-                    <template #content>
-                        <div class="slide-content">
-                            <img :src="slide.image" alt="slide image" class="slide-image"  data-aos="zoom-in" data-aos-once="false">
-                            <h3 data-aos="zoom-in" data-aos-once="false">{{ slide.title }}
-                                <a v-if="slide.website != null" :href="slide.website" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-once="false"><img src="@/assets/icons/external-link.png" class="link-icon"/></a>
-                                <a v-if="slide.github != null" :href="slide.github" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-once="false"><img src="@/assets/icons/github.png" class="link-icon"/></a>
-                            </h3>
-                            <p data-aos="zoom-in" data-aos-once="false">{{ slide.description }}</p>
-                            <p data-aos="zoom-in" data-aos-once="false"><strong>Technologies used: </strong>{{ slide.techs }}</p>
-                        </div>
-                    </template>
-                </vueper-slide>
+                    <vueper-slide
+                        v-for="(slide, i) in slides"
+                        :key="i"
+                        :image="slide.image"
+                        :title="slide.title"
+                        :description="slide.description"
+                        :techs="slide.techs"
+                        :website="slide.website"
+                        :github="slide.github"
+                        :style="'background: white;'">
+                        <template #content>
+                            <div class="slide-content">
+                                <img :src="slide.image" alt="slide image" class="slide-image"  data-aos="zoom-in" data-aos-once="false">
+                                <h3 data-aos="zoom-in" data-aos-once="false">{{ slide.title }}
+                                    <a v-if="slide.website != null" :href="slide.website" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-once="false"><img src="@/assets/icons/external-link.png" class="link-icon"/></a>
+                                    <a v-if="slide.github != null" :href="slide.github" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-once="false"><img src="@/assets/icons/github.png" class="link-icon"/></a>
+                                </h3>
+                                <p data-aos="zoom-in" data-aos-once="false">{{ slide.description }}</p>
+                                <p data-aos="zoom-in" data-aos-once="false"><strong>Technologies used: </strong>{{ slide.techs }}</p>
+                            </div>
+                        </template>
+                    </vueper-slide>
                 </vueper-slides>
-            
-        </div>
             </div>
-            
-        </div>
+        </div>            
+    </div>
 </template>
 <style scoped>
 

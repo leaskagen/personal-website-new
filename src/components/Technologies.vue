@@ -7,7 +7,6 @@
             <p><strong>{{tech.name}}</strong></p>
             <img :src="tech.image" alt="tech image" class="tech-image">
         </div>
-
     </div>
 </template>
 
@@ -80,19 +79,15 @@ export default {
         ]
     }),
 }
-
 </script>
 
 <style scoped>
-
 .technologies-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     row-gap: 2em;
-
-
 }
 
 .tech {
@@ -102,7 +97,6 @@ export default {
     align-items: center;
     text-align: center;
     flex: 1 1 18%;
-    
 }
 
 .tech p {

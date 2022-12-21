@@ -13,7 +13,7 @@
                 </a>
             </li>
         </ul>
-        <p class="bottom-text" data-aos="zoom-in" data-aos-once="false">This website was made with Vue.js, link to repository for this project <a href="https://github.com/leaskagen/personal-website-new" target="_blank" rel="noopener noreferrer">here</a><br/>Shapes are made with <a href="https://www.shapedivider.app" target="_blank" rel="noopener noreferrer">shapedivider.app</a> and icons are from <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">flaticon.com</a> and <a href="https://freeicons.io/" target="_blank" rel="noopener noreferrer">freeicons.io</a></p>
+        <p class="bottom-text" data-aos="zoom-in" data-aos-once="false">This website was made with Vue.js, link to repository for this project <a href="https://github.com/leaskagen/personal-website-new" target="_blank" rel="noopener noreferrer">here</a>.<br/>Shapes are made with <a href="https://www.shapedivider.app" target="_blank" rel="noopener noreferrer">shapedivider.app</a> and icons are from <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">flaticon.com</a> and <a href="https://freeicons.io/" target="_blank" rel="noopener noreferrer">freeicons.io</a></p>
     </footer>
 </template>
 

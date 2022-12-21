@@ -1,8 +1,8 @@
 <template>
   <main>
-    <HomeSection1/>
+    <HeroSection/>
     <HomeSection2/>
-    <HomeSection3/>
+    <AboutSection/>
     <FooterHome/>
   </main>
 </template>
@@ -36,17 +36,17 @@ body {
 
 
 <script>
-import HomeSection1 from '../components/HomeSection1.vue';
+import HeroSection from '../components/HeroSection.vue';
 import HomeSection2 from '../components/HomeSection2.vue';
-import HomeSection3 from '../components/HomeSection3.vue';
+import AboutSection from '../components/AboutSection.vue';
 import FooterHome from '../components/FooterHome.vue';
 
   export default {
     name: 'HomeView',
     components: {
-      HomeSection1,
+      HeroSection,
       HomeSection2,
-      HomeSection3,
+      AboutSection,
       FooterHome
     }
   }

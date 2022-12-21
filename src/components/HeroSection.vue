@@ -13,6 +13,7 @@
                 <img src="@/assets/meg.jpg" data-aos="zoom-in" data-aos-once="false" data-aos-duration="2000"/>
             </div>
         </div>
+        <!-- Custom shape -->
         <div class="custom-shape-divider-bottom-1666873237">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -25,12 +26,58 @@
 
 <script>
 export default {
-    name: 'HomeSection1',
-
+    name: 'HeroSection',
 }
 </script>
 
 <style scoped>
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 75vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 13em;
+    padding-top: 5em;
+}
+
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6em;
+    padding-top: 5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+img {
+    border-radius: 50%;
+    width: 325px;
+    height: auto;
+    z-index: 1;
+    animation: float2 30s ease-in-out infinite;
+}
+
+/* Background elements */
 
 .circle {
     position: absolute;
@@ -38,13 +85,11 @@ export default {
     height: 150px;
     border-radius: 50%;
     background-color: white;
-    /*animation: circle 10s ease-in-out infinite;*/
 }
 
 .circle1 {
     top: 10%;
     left: 36%;
-    /*animation-delay: 0s;*/
     opacity: 0.25;
     animation: float 13s ease-in-out infinite;
 }
@@ -54,7 +99,6 @@ export default {
     left: 8%;
     width: 175px;
     height: 175px;
-    /*animation-delay: 0s;*/
     opacity: 0.5;
     animation: float2 27s ease-in-out infinite;
     
@@ -66,9 +110,10 @@ export default {
     opacity: 0.25;
     width: 200px;
     height: 200px;
-    /*animation-delay: 4s;*/
     animation: float 12s ease-in-out infinite;
 }
+
+/* Floating animations */
 
 @keyframes float {
 	0% {
@@ -99,60 +144,8 @@ export default {
 		transform: translatey(0px);
 	}
 }
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 75vh;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
 
-.div1 { 
-    grid-area: 1 / 1 / 2 / 2; 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    padding-left: 13em;
-    padding-top: 5em;
-
-}
-
-h1 {
-    font-size: 3em;
-    
-}
-
-p {
-    text-align: center;
-    font-size: 1.2em;
-    z-index: 1;
-}
-
-img {
-    border-radius: 50%;
-    width: 325px;
-    height: auto;
-    z-index: 1;
-
-    animation: float2 30s ease-in-out infinite;
-}
-.div2 { 
-    grid-area: 1 / 2 / 2 / 3; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 6em;
-    padding-top: 5em;
-}
-
-/*
-.section1 {
-    height: 90vh;
-}
-*/
+/* Custom shape */
 .custom-shape-divider-bottom-1666873237 {
     position: relative;
     bottom: 0;
@@ -161,7 +154,6 @@ img {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    /*animation: float2 30s ease-in-out infinite;*/
 }
 
 .custom-shape-divider-bottom-1666873237 svg {

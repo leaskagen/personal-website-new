@@ -12,6 +12,7 @@
 import { onMounted } from "vue";
 import AOS from "aos";
 
+// AOS is a library for animating elements on scroll
 onMounted(() => {
     AOS.init();
 })
