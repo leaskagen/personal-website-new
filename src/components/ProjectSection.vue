@@ -154,8 +154,8 @@ export default {
             image: require('@/assets/screenshots/screenshot-2.png'),
             description: 'This is one of the most complex projects that I have been a part of, it was made for my most recent exam and I made it with my group. The project was made for Meliora Impact which is a Norwegian non profit. They wanted a platform where small-medium sized businesses can subscribe to charities, meaning that they donate to them regularly.',
             techs: 'React, CSS, Google OpenID, MongoDB, Express.js, Heroku',
-            website: null,
-            github: null
+            website: "https://pro201-smidig.herokuapp.com/",
+            github: "https://github.com/a-baade/pro201-smidig"
             },
             {
             title: 'Old Personal Website',
