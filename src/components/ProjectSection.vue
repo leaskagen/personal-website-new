@@ -172,6 +172,14 @@ export default {
             techs: 'Ionic, Vue.js, Typescript, Directus, GraphQL, iOS/Xcode, Capacitor, Google Maps API',
             website: null,
             github: 'https://github.com/leaskagen/Eksamen-Kryssplattform'
+            },
+            {
+            title: 'Fruity App',
+            image: require('@/assets/screenshots/fruity.svg'),
+            description: 'This is a native iOS app I made with Swift and Xcode for an exam in the fifth semester (fall 2022). It gets fruits from an API and you can see them in a list or grouped by different categories. You can also save eaten fruits in core data and see a log of different fruits you have eaten in a list that is sorted by date.',
+            techs: 'Xcode, Swift, Storyboard, Core Data, API',
+            website: null,
+            github: 'https://github.com/leaskagen/Eksamen-iOS-Programmering'
             }
         ]
     }),
