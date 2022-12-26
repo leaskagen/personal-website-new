@@ -9,7 +9,7 @@
             </div>
             <div class="projects-right">
                 <h2  data-aos="zoom-in" data-aos-once="false">These are projects I have worked on before</h2>
-                <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="60vh" autoplay>
+                <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="60vh" autoplay :touchable="false">
                     <vueper-slide
                         v-for="(slide, i) in slides"
                         :key="i"
