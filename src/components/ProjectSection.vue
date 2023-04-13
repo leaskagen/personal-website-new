@@ -8,7 +8,7 @@
                 <TechnologiesDiv />
             </div>
             <div class="projects-right">
-                <h2  data-aos="zoom-in" data-aos-once="false">These are projects I have worked on before</h2>
+                <h2  data-aos="zoom-in" data-aos-once="false">These are some of my best projects</h2>
                 <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="60vh" autoplay :touchable="false">
                     <vueper-slide
                         v-for="(slide, i) in slides"
@@ -180,6 +180,15 @@ export default {
             techs: 'Xcode, Swift, Storyboard, Core Data, API',
             website: null,
             github: 'https://github.com/leaskagen/Eksamen-iOS-Programmering'
+            }
+            ,
+            {
+            title: 'Stimulating Split Screen Chrome Extension',
+            image: require('@/assets/screenshots/extension2.jpg'),
+            description: 'This project is inspired by the overstimulation trends on TikTok, where people add relaxing gameplay or other satisfying videos next to clips of for example Family Guy to keep your attention. I made this Chrome extension where you can watch relaxing videos in a split screen next to whatever you are doing with just one click.',
+            techs: 'Javascript, HTML, CSS, Chrome Extension API Manifest Version 3',
+            website: 'https://chrome.google.com/webstore/detail/stimulating-split-screen/eiofmldbnffekfojgldjgeebnjeblhgc?hl=en&authuser=0',
+            github: 'https://github.com/leaskagen/Stimulating-Split-Screen-Chrome-Extension'
             }
         ]
     }),
