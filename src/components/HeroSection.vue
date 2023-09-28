@@ -66,14 +66,12 @@ const age = calculate_age(new Date(2000, 7, 28));
     top: 10px;
     justify-self: flex-end;
     align-self: start;
-    width: 100vw;
 }
 .blob-mobile2 {
     position: absolute;
-    bottom: 30px;
+    bottom: 1px;
     justify-self: flex-end;
     align-self: start;
-    width: 100%;
     z-index: 1;
 }
 
