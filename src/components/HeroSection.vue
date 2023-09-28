@@ -62,8 +62,8 @@ const age = calculate_age(new Date(2000, 7, 28));
 }
 
 .blob-mobile {
-    position: relative;
-    top: 10px;
+    position: absolute;
+    bottom: -10px;
 }
 .blob-mobile2 {
     position: absolute;
