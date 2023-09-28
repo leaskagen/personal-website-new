@@ -44,7 +44,9 @@ li {
 }
 
 p {
-    font-size: 14px;
+    font-size: clamp(12px, 5vw, 14px);
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
 img {
@@ -58,7 +60,7 @@ img {
 a {
     color: #202020;
     text-decoration: none;
-    font-size: 24px;
+    font-size: clamp(22px, 5vw, 24px);
 }
 
 a:hover {

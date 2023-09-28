@@ -33,12 +33,24 @@ export default {
             image: require('@/assets/technologies/vue.png'),
             },
             {
-            name: 'React.js',
+            name: 'Next.js',
+            image: require('@/assets/technologies/next.png'),
+            },
+            {
+            name: 'React',
+            image: require('@/assets/technologies/react.png'),
+            },
+            {
+            name: 'React Native',
             image: require('@/assets/technologies/react.png'),
             },
             {
             name: 'Sass',
             image: require('@/assets/technologies/sass.png'),
+            },
+            {
+                name: 'Tailwind',
+                image: require('@/assets/technologies/tailwind.png'),
             },
             {
             name: 'Bootstrap',
@@ -76,18 +88,21 @@ export default {
             name: 'Photoshop',
             image: require('@/assets/technologies/photoshop.png'),
             }
-        ]
+        ],
+        isMobile: isMobile
     }),
 }
+
+const isMobile = window.innerWidth <= 1024;
 </script>
 
 <style scoped>
 .technologies-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    row-gap: 2em;
+    row-gap: clamp(1em, 5vw, 2em); 
 }
 
 .tech {
@@ -96,7 +111,13 @@ export default {
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 100px;
     flex: 1 1 18%;
+    @media screen and (max-width: 1024px) {
+        flex: 0 0 30%;
+    
+        
+    }
 }
 
 .tech p {
@@ -105,7 +126,7 @@ export default {
 
 .tech-image {
     object-fit: contain;
-    height: 3.5rem;
+    height: clamp(3em, 5vw, 3.5em);
     width: auto;
     margin: 0;
 }

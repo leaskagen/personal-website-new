@@ -12,10 +12,16 @@
 body {
   background: linear-gradient(297deg, #ffa364, #f97ebe, #dd98fd);
   background-size: 600% 600%;
+  width: 100vw;
+  overflow-x: hidden;
 
   -webkit-animation: backgroundAnimation 59s ease infinite;
   -moz-animation: backgroundAnimation 59s ease infinite;
   animation: backgroundAnimation 59s ease infinite;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes backgroundAnimation {

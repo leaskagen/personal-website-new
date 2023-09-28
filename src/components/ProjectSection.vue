@@ -9,7 +9,31 @@
             </div>
             <div class="projects-right">
                 <h2  data-aos="zoom-in" data-aos-once="false">These are some of my best projects</h2>
-                <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="60vh" autoplay :touchable="false">
+                <vueper-slides v-if="!isMobile" class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="65vh" autoplay :touchable="false">
+                    <vueper-slide
+                        v-for="(slide, i) in slides"
+                        :key="i"
+                        :image="slide.image"
+                        :title="slide.title"
+                        :description="slide.description"
+                        :techs="slide.techs"
+                        :website="slide.website"
+                        :github="slide.github"
+                        :style="'background: white;'">
+                        <template #content>
+                            <div class="slide-content">
+                                <img :src="slide.image" alt="slide image" class="slide-image"  data-aos="zoom-in" data-aos-once="false">
+                                <h3 data-aos="zoom-in" data-aos-once="false">{{ slide.title }}
+                                    <a v-if="slide.website != null" :href="slide.website" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-once="false"><img src="@/assets/icons/external-link.png" class="link-icon"/></a>
+                                    <a v-if="slide.github != null" :href="slide.github" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-once="false"><img src="@/assets/icons/github.png" class="link-icon"/></a>
+                                </h3>
+                                <p data-aos="zoom-in" data-aos-once="false">{{ slide.description }}</p>
+                                <p data-aos="zoom-in" data-aos-once="false"><strong>Technologies used: </strong>{{ slide.techs }}</p>
+                            </div>
+                        </template>
+                    </vueper-slide>
+                </vueper-slides>
+                <vueper-slides v-if="isMobile" class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="50vh" autoplay :touchable="false">
                     <vueper-slide
                         v-for="(slide, i) in slides"
                         :key="i"
@@ -42,6 +66,7 @@
 .section2 {
     background-color: white;
     padding-bottom: 5em;
+
 }
 
 h1 {
@@ -58,15 +83,21 @@ h2 {
 
 h3 {
     margin-bottom: 0;
-    font-size: 1.5em;
+    font-size: clamp(1.125em, 3vw, 1.5em);
 }
 
 .projects-section {
-    display: grid;
+    @media screen and (min-width: 1024px) {
+        display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    }
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5em;
+    
 }
 
 .projects-right {
@@ -105,21 +136,30 @@ h3 {
 }
 
 .slide-image {
-    width: 80%;
+    width: auto;
     max-width: 700px;
     height: auto;
+    max-height: 225px;
     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    }
 }
 
 .slide-content p {
-    font-size: 1em;
+    font-size: clamp(0.5em, 3vw, 1em);
     text-align: center;
 }
 
 .link-icon {
-    width: 1em;
-    height: 1em;
-    margin-left: 0.25em;
+    width: clamp(0.75em, 3vw, 1em);
+    height: clamp(0.75em, 3vw, 1em);
+    margin-left: clamp(0.1em, 3vw, 0.25em);
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        top: 2.5px;
+        
+    }
 }
 
 </style>
@@ -190,7 +230,9 @@ export default {
             website: 'https://chrome.google.com/webstore/detail/stimulating-split-screen/eiofmldbnffekfojgldjgeebnjeblhgc?hl=en&authuser=0',
             github: 'https://github.com/leaskagen/Stimulating-Split-Screen-Chrome-Extension'
             }
-        ]
+        ],
+        slidesHeight: slidesHeight,
+        isMobile: isMobile
     }),
         components: {
         VueperSlides, 
@@ -198,5 +240,9 @@ export default {
         TechnologiesDiv
     },
 }
+
+const isMobile = window.innerWidth <= 1024;
+
+const slidesHeight = isMobile ? '60vh' : '80vh';
 
 </script>
