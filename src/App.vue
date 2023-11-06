@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <a href="#welcome" data-menuanchor="welcome">Lea Skagen</a>
+    <a href="#welcome" data-menuanchor="welcome" v-if="!isMobile">Lea Skagen</a>
     <a href="#projects" data-menuanchor="projects">Projects</a>
     <a href="#about" data-menuanchor="about">About me</a>
     <a href="#contact" data-menuanchor="contact">Contact</a>
@@ -16,6 +16,8 @@ import AOS from "aos";
 onMounted(() => {
     AOS.init();
 })
+
+const isMobile = window.innerWidth <= 1024;
 </script>
 
 <style>
@@ -30,7 +32,7 @@ onMounted(() => {
 /* Navigation bar */
 nav {
   padding: 0.5em 1.5em;
-  height: 2.75em;
+  height: clamp(2em, 5vw, 2.75em);
   position: fixed;
   display: flex;
   gap: 1.5em;
@@ -41,7 +43,7 @@ nav {
 }
 
 nav a {
-  font-size: 1.75em;
+  font-size:clamp(1em, 5vw, 1.75em);
   color: #20202080;
 }
 
