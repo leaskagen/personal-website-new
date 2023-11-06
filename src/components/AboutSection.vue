@@ -9,10 +9,26 @@
             </svg>
         </div>
         <!-- Animated background elements -->
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
-        <div class="circle circle4"></div>
+        <div class="circle circle1">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" fill-opacity="25%" d="M41.6,-75.1C51,-66.8,53.4,-49.5,61,-35.5C68.7,-21.5,81.5,-10.7,84.5,1.7C87.5,14.2,80.7,28.4,69.4,36.1C58.2,43.9,42.4,45.1,30.1,54.1C17.8,63.1,8.9,80,-2.5,84.4C-14,88.8,-27.9,80.7,-40.2,71.6C-52.5,62.5,-63,52.5,-68.1,40.4C-73.1,28.3,-72.6,14.2,-73.7,-0.6C-74.8,-15.4,-77.5,-30.9,-70.3,-39.2C-63.1,-47.6,-46.1,-48.9,-32.7,-55C-19.3,-61,-9.7,-71.8,3.2,-77.4C16.2,-83,32.3,-83.5,41.6,-75.1Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <div class="circle circle2">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" fill-opacity="50%" d="M37.7,-60.4C50.6,-57.8,64,-51.3,70.7,-40.5C77.4,-29.8,77.4,-14.9,74.3,-1.8C71.1,11.3,64.9,22.6,57.2,31.6C49.6,40.7,40.5,47.5,30.7,51.7C20.9,55.9,10.5,57.4,0.9,55.9C-8.8,54.4,-17.5,49.9,-26.8,45.5C-36.1,41.1,-46,36.7,-54.5,29.1C-63,21.5,-70.1,10.7,-73.1,-1.7C-76.2,-14.2,-75.1,-28.5,-67.3,-37.3C-59.5,-46.1,-45,-49.4,-32.6,-52.4C-20.3,-55.4,-10.2,-58.1,1.1,-60C12.4,-61.9,24.7,-63.1,37.7,-60.4Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <div class="circle circle3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" fill-opacity="50%" d="M24.1,-47.6C31.5,-37.6,37.9,-31.5,47.9,-24.3C57.9,-17,71.7,-8.5,75.2,2C78.6,12.5,71.9,25.1,64.4,36.8C56.9,48.4,48.7,59.2,37.8,62.3C26.9,65.4,13.5,60.8,0.3,60.4C-12.9,59.9,-25.9,63.5,-38,61.2C-50.1,58.8,-61.5,50.4,-69.2,39.3C-76.8,28.1,-80.8,14,-79.7,0.6C-78.6,-12.7,-72.4,-25.5,-66.6,-39.9C-60.8,-54.3,-55.3,-70.4,-44.3,-78.3C-33.3,-86.3,-16.6,-86.1,-4.1,-78.9C8.4,-71.8,16.8,-57.7,24.1,-47.6Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <div class="circle circle4">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" fill-opacity="25%" d="M40.3,-67.4C52.4,-62.9,62.4,-52.3,66.8,-40.1C71.3,-27.9,70.2,-13.9,70.4,0.1C70.5,14.1,71.8,28.1,68,41.6C64.2,55,55.4,67.9,43.2,76.9C31.1,86,15.5,91.3,2,87.9C-11.6,84.5,-23.2,72.4,-32.5,61.7C-41.8,50.9,-48.7,41.5,-55.9,31.5C-63.1,21.4,-70.7,10.7,-75.6,-2.8C-80.5,-16.4,-82.8,-32.8,-77.8,-46.7C-72.8,-60.6,-60.5,-71.9,-46.3,-75.3C-32.1,-78.6,-16,-73.9,-1,-72.2C14.1,-70.6,28.3,-72,40.3,-67.4Z" transform="translate(100 100)" />
+            </svg>
+        </div>
         <div class="hat"><img src="@/assets/icons/graduation.png"/></div>
         <div class="pc"><img src="@/assets/icons/monitor.png"/></div>
 
@@ -95,25 +111,31 @@ h1 {
 
 .circle {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    /*
     border-radius: 50%;
     background-color: white;
+    */
 }
 
 .circle1 {
     top: calc(75% - 75px);
     left: calc(40% - 25px);
+    /*
     opacity: 0.25;
+    */
     animation: float 13s ease-in-out infinite;
 }
 
 .circle2 {
-    top: calc(25% + 45px);
+    top: calc(25% + 5px);
     left: 13%;
-    width: 175px;
-    height: 175px;
+    width: 375px;
+    height: 375px;
+    /*
     opacity: 0.5;
+    */
     animation: float2 27s ease-in-out infinite;
     
 }
@@ -121,17 +143,21 @@ h1 {
 .circle3 {
     top: calc(15%);
     right: 10%;
+    /*
     opacity: 0.5;
-    width: 100px;
-    height: 100px;
+    */
+    width: 200px;
+    height: 200px;
     animation: float 15s ease-in-out infinite;
 }
 
 .circle4 {
-    top: calc(78%);
+    top: calc(75%);
     right: 17%;
+    /*
     opacity: 0.25;
-    width: 200px;
+    */
+    width: 300px;
     height: 200px;
     animation: float2 20s ease-in-out infinite;
 }

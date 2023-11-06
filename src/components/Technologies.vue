@@ -25,16 +25,8 @@ export default {
             image: require('@/assets/technologies/css.png'),
             },
             {
-            name: 'JavaScript',
-            image: require('@/assets/technologies/javascript.png'),
-            },
-            {
-            name: 'Vue.js',
-            image: require('@/assets/technologies/vue.png'),
-            },
-            {
-            name: 'React.js',
-            image: require('@/assets/technologies/react.png'),
+            name: 'Tailwind CSS',
+            image: require('@/assets/technologies/tailwind.png'),
             },
             {
             name: 'Sass',
@@ -45,8 +37,24 @@ export default {
             image: require('@/assets/technologies/bootstrap.png'),
             },
             {
+            name: 'JavaScript',
+            image: require('@/assets/technologies/javascript.png'),
+            },
+            {
             name: 'TypeScript',
             image: require('@/assets/technologies/typescript.png'),
+            },
+            {
+            name: 'Vue.js',
+            image: require('@/assets/technologies/vue.png'),
+            },
+            {
+            name: 'React',
+            image: require('@/assets/technologies/react.png'),
+            },
+            {
+            name: 'Next.js',
+            image: require('@/assets/technologies/next.png'),
             },
             {
             name: 'Swift',
@@ -59,6 +67,10 @@ export default {
             {
             name: 'Kotlin',
             image: require('@/assets/technologies/kotlin.png'),
+            },
+            {
+            name: 'React Native',
+            image: require('@/assets/technologies/react.png'),
             },
             {
             name: 'Ionic',

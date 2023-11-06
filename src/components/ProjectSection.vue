@@ -4,12 +4,12 @@
         <div class="projects-section">
             <div class="projects-left">
                 <h2 data-aos="zoom-in" data-aos-once="false">Technologies</h2>
-                <p data-aos="zoom-in" data-aos-once="false">These are the technologies I have worked with before or am currently learning</p>
+                <p data-aos="zoom-in" data-aos-once="false">These are some of the technologies I have worked with before or am currently learning</p>
                 <TechnologiesDiv />
             </div>
             <div class="projects-right">
                 <h2  data-aos="zoom-in" data-aos-once="false">These are some of my best projects</h2>
-                <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="60vh" autoplay :touchable="false">
+                <vueper-slides class="no-shadow project-slides" arrows-outside bullets-outside transition-speed="400" fixed-height="65vh" autoplay :touchable="false">
                     <vueper-slide
                         v-for="(slide, i) in slides"
                         :key="i"
@@ -133,6 +133,7 @@ import TechnologiesDiv from './Technologies.vue';
 export default {
     data: () => ({
         slides: [
+            /*
             {
             title: 'Gyldne Pizza Portalen',
             image: require('@/assets/screenshots/screenshot-1.png'),
@@ -165,11 +166,12 @@ export default {
             website: 'https://leaskagen.github.io/',
             github: 'https://github.com/leaskagen/leaskagen.github.io'
             },
+            */
             {
             title: 'Retro Trader App',
             image: require('@/assets/screenshots/retroapp.svg'),
             description: 'This is a crossplattform app I made with Ionic framework with Vue.js and Typescript, also with Directus as database and backend. It was made for an exam in the fifth semester (fall 2022) and is a marketplace for retro games. You can create an account, publish games for sale, buy games, chat with other users, and more.',
-            techs: 'Ionic, Vue.js, Typescript, Directus, GraphQL, iOS/Xcode, Capacitor, Google Maps API',
+            techs: 'Ionic, Vue.js, Typescript, GraphQL, iOS/Xcode, Capacitor, Google Maps API',
             website: null,
             github: 'https://github.com/leaskagen/Eksamen-Kryssplattform'
             },
@@ -180,8 +182,7 @@ export default {
             techs: 'Xcode, Swift, Storyboard, Core Data, API',
             website: null,
             github: 'https://github.com/leaskagen/Eksamen-iOS-Programmering'
-            }
-            ,
+            },
             {
             title: 'Stimulating Split Screen Chrome Extension',
             image: require('@/assets/screenshots/extension2.jpg'),
@@ -189,6 +190,14 @@ export default {
             techs: 'Javascript, HTML, CSS, Chrome Extension API Manifest Version 3',
             website: 'https://chrome.google.com/webstore/detail/stimulating-split-screen/eiofmldbnffekfojgldjgeebnjeblhgc?hl=en&authuser=0',
             github: 'https://github.com/leaskagen/Stimulating-Split-Screen-Chrome-Extension'
+            },
+            {
+            title: 'Animal Crossing Villager Wiki',
+            image: require('@/assets/screenshots/acnh-wiki.png'),
+            description: 'This project is inspired by Animal Crossing New Horizons which is one of my favorite games. This website allows you to see all the different villagers from the game, and their information. The villagers can be filtered by name with a search input field, or filtered by the following categories: gender, species, personality, birthday and zodiac sign.',
+            techs: 'React, Next.js, Tailwind CSS, Typescript',
+            website: 'https://animalcrossingvillagerwiki.netlify.app/',
+            github: 'https://github.com/leaskagen/acnh-wiki'
             }
         ]
     }),

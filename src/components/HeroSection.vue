@@ -1,8 +1,20 @@
 <template>
     <div class="section section1" data-anchor="welcome" id="welcome">
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
+        <div class="circle circle1">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" fill-opacity="25%" d="M61.5,-50.1C74.9,-32.3,77.7,-7,70,11.8C62.4,30.5,44.4,42.6,25.2,51.5C6,60.4,-14.3,66.1,-33.7,60.4C-53.1,54.7,-71.6,37.6,-73.4,19.6C-75.2,1.6,-60.4,-17.3,-45.3,-35.5C-30.3,-53.7,-15.2,-71.2,4.4,-74.7C24.1,-78.3,48.1,-67.9,61.5,-50.1Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <div class="circle circle2">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" fill-opacity="50%" d="M54.9,-62.5C63.2,-46.6,56.4,-23.3,53.4,-3C50.4,17.3,51.2,34.6,42.9,44.7C34.6,54.7,17.3,57.4,-2.3,59.7C-21.9,62,-43.8,63.9,-59.8,53.8C-75.7,43.8,-85.6,21.9,-78.2,7.4C-70.8,-7.1,-46,-14.2,-30.1,-30C-14.2,-45.9,-7.1,-70.6,8.1,-78.7C23.3,-86.8,46.6,-78.4,54.9,-62.5Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <div class="circle circle3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" fill-opacity="35%" d="M59.3,-54.6C75.4,-43.2,86,-21.6,84.7,-1.4C83.3,18.9,70,37.8,53.9,53.9C37.8,70,18.9,83.3,5.2,78.1C-8.5,72.9,-17,49.1,-27.7,33.1C-38.4,17,-51.4,8.5,-56.4,-5C-61.3,-18.4,-58.3,-36.8,-47.5,-48.2C-36.8,-59.6,-18.4,-64,1.6,-65.6C21.6,-67.2,43.2,-66,59.3,-54.6Z" transform="translate(100 100)" />
+            </svg>
+        </div>
         <div class="container">
             <div class="div1">
                 <h1 data-aos="zoom-in" data-aos-once="false" data-aos-duration="1500">Lea Skagen</h1>
@@ -70,7 +82,7 @@ p {
 }
 
 img {
-    border-radius: 50%;
+    border-radius: 58% 42% 61% 39% / 43% 70% 30% 57%;
     width: 325px;
     height: auto;
     z-index: 1;
@@ -81,25 +93,27 @@ img {
 
 .circle {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    /*
     border-radius: 50%;
     background-color: white;
+    */
 }
 
 .circle1 {
     top: 10%;
     left: 36%;
-    opacity: 0.25;
+    /*opacity: 0.25;*/
     animation: float 13s ease-in-out infinite;
 }
 
 .circle2 {
     top: 36%;
     left: 8%;
-    width: 175px;
-    height: 175px;
-    opacity: 0.5;
+    width: 375px;
+    height: 375px;
+    /*opacity: 0.5;*/
     animation: float2 27s ease-in-out infinite;
     
 }
@@ -107,7 +121,9 @@ img {
 .circle3 {
     bottom: 26%;
     right: 5%;
+    /*
     opacity: 0.25;
+    */
     width: 200px;
     height: 200px;
     animation: float 12s ease-in-out infinite;
